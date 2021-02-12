@@ -1,0 +1,5 @@
+export const GET_OPPONENT = '[card] GET_OPPONENT'
+export const SET_OPPONENT = '[card] SET_OPPONENT'
+export const FETCH_OPPONENT = '[card] FETCH_OPPONENT'
+export const SET_FIGHTER = '[card-people] SET_FIGHTER'
+export const SET_STARSHIPS = '[card-starship] SET_STARSHIPS'
