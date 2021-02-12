@@ -1,0 +1,178 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Intro component should render properly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sc-hKgILt cQFPrf"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root"
+          focusable="false"
+          style="color: white; margin: 2rem;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+          />
+        </svg>
+        <div
+          class="sc-gsTCUz gJwbhO"
+        >
+          <div
+            class="sc-dlfnbm iHIaWA"
+          >
+            <audio
+              src="starwarssong.mp3"
+            />
+            <h1>
+              Ultimate StarWars Battle
+            </h1>
+            <p>
+               Build an application to select random people or starships and render their details to see who would win based on a common attribute.
+            </p>
+            <p>
+              A person with greater mass wins, a starship with more crew wins.
+            </p>
+            <p>
+              Once two cards are displayed the app should declare one of the cards a winner based on the higher common attribute.
+            </p>
+            <p>
+              Being Creative
+            </p>
+          </div>
+        </div>
+        <button
+          class="sc-bdfBwQ cEuKaJ btn btn-primary"
+          type="button"
+        >
+          Skip Intro 
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-hKgILt cQFPrf"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root"
+        focusable="false"
+        style="color: white; margin: 2rem;"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+        />
+      </svg>
+      <div
+        class="sc-gsTCUz gJwbhO"
+      >
+        <div
+          class="sc-dlfnbm iHIaWA"
+        >
+          <audio
+            src="starwarssong.mp3"
+          />
+          <h1>
+            Ultimate StarWars Battle
+          </h1>
+          <p>
+             Build an application to select random people or starships and render their details to see who would win based on a common attribute.
+          </p>
+          <p>
+            A person with greater mass wins, a starship with more crew wins.
+          </p>
+          <p>
+            Once two cards are displayed the app should declare one of the cards a winner based on the higher common attribute.
+          </p>
+          <p>
+            Being Creative
+          </p>
+        </div>
+      </div>
+      <button
+        class="sc-bdfBwQ cEuKaJ btn btn-primary"
+        type="button"
+      >
+        Skip Intro 
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
