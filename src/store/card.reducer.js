@@ -1,7 +1,7 @@
 import * as constant from './card.constant'
 
 
-const initialState = {
+export const initialState = {
   people: {list: [], isLoading: false},
   starships: {list: [], isLoading: false},
   fighter: {},
