@@ -15,7 +15,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test:coverage": "react-scripts test --coverage --watchAll=false && npm run test:coverage:table",
+    "test:coverage:table": "open coverage/lcov-report/index.html"
   },
   "eslintConfig": {
     "extends": [
