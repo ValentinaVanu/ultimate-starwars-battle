@@ -20,7 +20,6 @@ export const setOpponentListAction = (who, list) => ({
 export const getOpponentListAction = () =>
 {
   return dispatch => {
-    // ['people', 'starships'].forEach(who => dispatch({type: constant.FETCH_OPPONENT, who}))
     try {
       const getResult = async(who) => {
         dispatch({type: constant.FETCH_OPPONENT, who})
