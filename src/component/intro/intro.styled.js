@@ -1,14 +1,17 @@
 import { Button } from 'react-bootstrap'
 import styled from 'styled-components'
 import deathStar from './img/deathstar.jpg'
+import { Link } from '@reach/router'
 
 
-
-export const StyledButton = styled(Button)`
+export const StyledLink = styled(Link)`
   && {
     background-color: #000;
-    border-color: #7f723b;
+    border: 1px solid #cbcbcb;
+    border-radius: 5px;
     color: #cbcbcb;
+    padding: 0.5rem;
+    text-decoration: none;
     margin: 2rem;
     align-self: flex-end;
 

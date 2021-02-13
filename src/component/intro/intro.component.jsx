@@ -1,13 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { navigate } from '@reach/router'
 
 import starWarsSound from './mp3/starwarssong.mp3'
 import * as SI from './intro.styled'
-import { Button } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import * as IA from '../../store/intro.action'
 import VolumeUpIcon from '@material-ui/icons/VolumeUp'
 import VolumeOffIcon from '@material-ui/icons/VolumeOff'
 import SkipNextIcon from '@material-ui/icons/SkipNext'
+
 
 
 const Intro = () => {
@@ -24,10 +25,10 @@ const Intro = () => {
       audioRef.current.volume = 1
       audioRef.current.muted = muted
       !muted && audioRef.current.play()
-      console.log(audioRef.current)
       setTimeout(() => {
-        dispatch(IA.skipIntroAction(true))
-      }, 9999999920000);
+        navigate("/card-menu")
+        // dispatch(IA.skipIntroAction(true))
+      }, 20000);
     },
     [muted]
   )
@@ -63,11 +64,11 @@ const Intro = () => {
             <p>Being Creative</p>
           </SI.StyledCrawl>
         </SI.StyleCredits>
-        <SI.StyledButton
-          onClick={handleSkipIntro}
+        <SI.StyledLink
+          to="/card-menu"
         >
           Skip Intro <SkipNextIcon />
-        </SI.StyledButton>
+        </SI.StyledLink>
       </SI.DeathStarBackgroud>}
     </>
   )

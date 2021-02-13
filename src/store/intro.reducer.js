@@ -1,6 +1,6 @@
 import * as constant from './intro.constant'
 
-const initialState = {
+export const initialState = {
   skipIntro: false,
   muted: true,
 }

@@ -1,12 +1,13 @@
 import React, { Fragment } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 
-import { Button } from 'react-bootstrap'
-import peopleImg from './img/people.jpg'
+import peopleImg from './people.jpg'
 import { CardImg, CardSubtitle } from 'reactstrap'
 
 import * as AP from '../../store/card.action'
-import * as SP from './card-menu.style'
+import * as SR from '../reusable/reusable.style'
+import * as SP from './pleople.style'
+
 
 const People = () => {
   const dispatch = useDispatch()
@@ -16,23 +17,40 @@ const People = () => {
     card.fighter.second,
   ]))
 
+  
+  const getWinner = () => {
+    // If you are reading this, here are two ways to convert strings to numbers
+    const firstFighterMass = +firstFighter.mass
+    const secondFighterMass = parseInt(secondFighter.mass)
+    if ( firstFighterMass > secondFighterMass) {
+      return `${firstFighter.name} is a Winner !`
+    } else {
+      return `${secondFighter.name} is a Winner!`
+    }
+  }
+
 
   const pickFighters = () => {
     const [first, second] = people.list.sort(() => Math.random() - 0.5)
     dispatch(AP.setFighterAction(firstFighter ? {} : {first, second}))
   }
-    console.log(firstFighter)
 
   return (
-    <SP.StyledCard>
-    <CardImg top height="160px" alt="people img" src={peopleImg}/>
-    <SP.StyledcardTitle tag="h5">
-      Humans
-      <Button
+    <SP.StyledPeopleCard>
+    <CardImg top alt="people img" src={peopleImg}/>
+    <SR.StyledCardHeader>
+      {firstFighter && <SR.StyledcardTitle tag="h5">
+        {/* Humans */}
+        {getWinner(firstFighter)}
+      </SR.StyledcardTitle>}
+      {!firstFighter && <SR.StyledcardTitle tag="h5">
+        Humans
+      </SR.StyledcardTitle>}
+      <SR.StyledCardBtn
         onClick={pickFighters}
-      >Shuffle Fighters</Button>
-    </SP.StyledcardTitle>
-    <SP.StyledCardBody>
+      >Shuffle Fighters</SR.StyledCardBtn>
+    </SR.StyledCardHeader>
+    <SR.StyledCardBody>
       {firstFighter && 
       <>
         <CardSubtitle
@@ -42,12 +60,12 @@ const People = () => {
         >
           {firstFighter.name}
         </CardSubtitle>
-        <SP.StyledcardDescription
+        <SR.StyledcardDescription
           tag="h6"
           className="mb-2 text-muted"
         >
           {firstFighter.mass}
-        </SP.StyledcardDescription>
+        </SR.StyledcardDescription>
         <CardSubtitle
           tag="h6"
           className="mb-2
@@ -55,12 +73,12 @@ const People = () => {
         >
           {secondFighter.name}
         </CardSubtitle>
-        <SP.StyledcardDescription
+        <SR.StyledcardDescription
           tag="h6"
           className="mb-2 text-muted"
         >
           {secondFighter.mass}
-        </SP.StyledcardDescription>
+        </SR.StyledcardDescription>
       </>
       }
       {!firstFighter && people.list.map(({ name, mass }) => (
@@ -72,16 +90,16 @@ const People = () => {
               >
                 {name}
             </CardSubtitle>
-            <SP.StyledcardDescription
+            <SR.StyledcardDescription
               tag="h6"
               className="mb-2 text-muted"
               >
                 {mass}
-            </SP.StyledcardDescription>
+            </SR.StyledcardDescription>
           </Fragment>
           ))}
-    </SP.StyledCardBody>
-  </SP.StyledCard>
+    </SR.StyledCardBody>
+  </SP.StyledPeopleCard>
   )
 }
 
