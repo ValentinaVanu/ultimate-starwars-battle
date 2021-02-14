@@ -1,21 +1,16 @@
 import styled from 'styled-components'
-import battleBg from './img/battle.jpg'
-import { Card, CardBody, CardSubtitle, CardTitle } from 'reactstrap'
+import { Card } from 'reactstrap'
 
 
-
-
+export const StyledLoading = styled.span`
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  opacity: 0.7;
+`
 
 export const StyledCardBody = styled.div`
   margin-top: 20px;
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center; */
 `
 
 export const StyledCard = styled(Card)`
@@ -27,23 +22,21 @@ export const StyledCard = styled(Card)`
   position: relative;
 
   @media only screen and (min-width: 768px) {
-    /* width: 100px;
-    height: 100px; */
-    /* grid-row: 1/-1; */
+    /*  */
   }
   @media only screen and (min-width: 992px) {
-    /* width: 110px;
-    height: 110px; */
+    width: 150px;
+    height: 120px;
   }
+
 `
 
 export const StyledCardWrapper = styled.div`
   height: 100%;
   display: grid;
-  margin: 1rem auto;
-  max-width: 1080px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  margin: 1rem;
+  max-width: 1280px;
+  grid-template-columns: repeat(auto-fill, minmax(186px, 1fr)) ; grid-template-rows: auto;
   grid-gap: 10px;
 
   @media only screen and (min-width: 768px) {
@@ -51,18 +44,9 @@ export const StyledCardWrapper = styled.div`
     grid-template-rows: repeat(8, 1fr);
   }
   @media only screen and (min-width: 992px) {
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(150px, 260px));
   }
-/* 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.75;
-  } */
+
 `
 

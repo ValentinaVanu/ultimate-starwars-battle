@@ -1,10 +1,9 @@
 import React from 'react'
-import { Provider, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { Intro } from '../intro'
 // import store from '../../store'
 import { CardMenu } from '../card-menu'
-import { StyledAppWrapper } from './app.styled'
-import { Router } from '@reach/router'
+import { StyledAppWrapper, StyledRouter } from './app.styled'
 import { Fight } from '../fight'
 
 const App = () => {
@@ -13,11 +12,11 @@ const App = () => {
 
   return (
     <StyledAppWrapper>
-      <Router>
+      <StyledRouter>
         <Intro path="/"/>
         <CardMenu path="card-menu"/>
         <Fight path="fight"/>
-      </Router>
+      </StyledRouter>
     </StyledAppWrapper>
   )
 }

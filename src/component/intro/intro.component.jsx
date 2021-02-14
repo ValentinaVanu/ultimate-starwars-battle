@@ -18,7 +18,6 @@ const Intro = () => {
     intro.skipIntro,
   ]))
   const dispatch = useDispatch()
-  // dispatch(IA.skipIntroAction(skipIntro))
 
   useEffect(
     () => {
@@ -27,7 +26,6 @@ const Intro = () => {
       !muted && audioRef.current.play()
       setTimeout(() => {
         navigate("/card-menu")
-        // dispatch(IA.skipIntroAction(true))
       }, 20000);
     },
     [muted]

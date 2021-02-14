@@ -51,7 +51,7 @@ export const StyleCredits = styled.div`
 
 export const StyledCrawl = styled.div`
   position: relative;
-  top: 999999px;
+  top: 9999px;
   transform-origin: 50% 100%;
   animation: crawl 50s linear;
 

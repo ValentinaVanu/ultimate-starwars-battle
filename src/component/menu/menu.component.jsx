@@ -56,10 +56,6 @@ const Menu = () => {
         onClick={handlePickedOpponents}
       >Pick Opponents
       </SM.StyledMenuButton>
-      {/* <Link
-        to="/fight">
-        Fight
-        </Link> */}
       <SM.StyledLink
         to="/card-menu">
         Card Menu

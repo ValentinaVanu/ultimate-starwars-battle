@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 import { CardTitle } from 'reactstrap'
 
 import * as SR from '../reusable/reusable.style'
-import { StyledCard, StyledFightWrapper, StyledWinnerCard } from './fight.style'
+import { StyledCard, StyledCardWrapper, StyledFightWrapper, StyledTitle, StyledWinnerCard } from './fight.style'
 
 const Fight = () => {
   const [firstOpponent, secondOpponent] = useSelector(({ menu }) => [
@@ -49,12 +49,11 @@ const Fight = () => {
     return winner
   }
 
-
   return (
     <StyledFightWrapper>
       {!firstOpponent && <h1>You have to pick a fight first</h1>}
-      {firstOpponent && <div>
-        <h1>Fight</h1>
+      {firstOpponent && <StyledCardWrapper>
+        <StyledTitle>Fight !</StyledTitle>
         <StyledCard>
           <SR.StyledCardBody>
             <CardTitle
@@ -74,7 +73,7 @@ const Fight = () => {
               tag="h6">The WINER is... {getWinner()} !</CardTitle>
           </SR.StyledCardBody>
         </StyledWinnerCard>
-      </div>}
+      </StyledCardWrapper>}
       <Menu />
     </StyledFightWrapper>
   )

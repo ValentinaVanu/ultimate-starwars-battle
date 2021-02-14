@@ -52,11 +52,11 @@ const CardMenu = () => {
           )
         })
         }
-        {starships.isLoading && <h1>Loading...</h1>}
+        {starships.isLoading && <SC.StyledLoading>Loading...</SC.StyledLoading>}
         {/* <People/>
         <Starship/> */}
+        <Menu />
       </SC.StyledCardWrapper>
-      <Menu />
     </>
   )
 }
