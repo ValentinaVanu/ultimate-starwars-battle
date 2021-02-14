@@ -3,13 +3,14 @@ import { Starship } from '../starship/starship.component'
 import { People } from '../people/people.component'
 
 import * as SFV from './fight-first-version.style'
+import { Menu } from '../menu'
 
 const FirstVersion = () => {
   return (
     <SFV.StyledFightWrapper>
-      <h1>First Version of fight</h1>
       <People />
       <Starship />
+      <Menu />
     </SFV.StyledFightWrapper>
   )
 }
