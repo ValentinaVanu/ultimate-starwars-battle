@@ -5,6 +5,7 @@ import { Intro } from '../intro'
 import { CardMenu } from '../card-menu'
 import { StyledAppWrapper, StyledRouter } from './app.styled'
 import { Fight } from '../fight'
+import { FirstVersion } from '../fight-first-version'
 
 const App = () => {
 
@@ -16,6 +17,7 @@ const App = () => {
         <Intro path="/"/>
         <CardMenu path="card-menu"/>
         <Fight path="fight"/>
+        <FirstVersion path="fight-first-version" />
       </StyledRouter>
     </StyledAppWrapper>
   )
