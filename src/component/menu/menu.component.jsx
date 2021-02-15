@@ -57,11 +57,11 @@ const Menu = () => {
       >Pick Opponents
       </SM.StyledMenuButton>
       <SM.StyledLink
-        to="/card-menu">
+        to="/gh-pages-url/card-menu">
         Card Menu
       </SM.StyledLink>
       <SM.StyledLink
-        to="/">
+        to="/gh-pages-url">
         Back to Intro
       </SM.StyledLink>
     </SM.StyledMenuWrapper>

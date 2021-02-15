@@ -5,9 +5,11 @@ import { Link } from '@reach/router'
 
 export const StyledMenuButton = styled(Button)`
   z-index: 1;
+  white-space: nowrap;
 `
 export const StyledLink = styled(Link)`
   text-decoration: none;
+  white-space: nowrap;
   color: #fff;
   background-color: #007bff;
   padding: 10px;
@@ -26,6 +28,9 @@ export const StyledMenuWrapper = styled.div`
   grid-row: 4/-1;
   justify-self: center;
   align-self: end;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
 
   @media only screen and (min-width: 768px) {
     grid-column: 3/7;
