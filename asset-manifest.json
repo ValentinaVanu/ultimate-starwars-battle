@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/ValentinaVanu/ultimate-starwars-battle/static/css/main.de92d894.chunk.css",
-    "main.js": "/ValentinaVanu/ultimate-starwars-battle/static/js/main.74dffc0d.chunk.js",
-    "main.js.map": "/ValentinaVanu/ultimate-starwars-battle/static/js/main.74dffc0d.chunk.js.map",
-    "runtime-main.js": "/ValentinaVanu/ultimate-starwars-battle/static/js/runtime-main.16ef46ae.js",
-    "runtime-main.js.map": "/ValentinaVanu/ultimate-starwars-battle/static/js/runtime-main.16ef46ae.js.map",
-    "static/css/2.658248ec.chunk.css": "/ValentinaVanu/ultimate-starwars-battle/static/css/2.658248ec.chunk.css",
-    "static/js/2.4341c917.chunk.js": "/ValentinaVanu/ultimate-starwars-battle/static/js/2.4341c917.chunk.js",
-    "static/js/2.4341c917.chunk.js.map": "/ValentinaVanu/ultimate-starwars-battle/static/js/2.4341c917.chunk.js.map",
-    "index.html": "/ValentinaVanu/ultimate-starwars-battle/index.html",
-    "static/css/2.658248ec.chunk.css.map": "/ValentinaVanu/ultimate-starwars-battle/static/css/2.658248ec.chunk.css.map",
-    "static/css/main.de92d894.chunk.css.map": "/ValentinaVanu/ultimate-starwars-battle/static/css/main.de92d894.chunk.css.map",
-    "static/js/2.4341c917.chunk.js.LICENSE.txt": "/ValentinaVanu/ultimate-starwars-battle/static/js/2.4341c917.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/ValentinaVanu/ultimate-starwars-battle/static/media/battle.daa222dd.jpg",
-    "static/media/deathstar.3125cba8.jpg": "/ValentinaVanu/ultimate-starwars-battle/static/media/deathstar.3125cba8.jpg",
-    "static/media/people.e2b3ded2.jpg": "/ValentinaVanu/ultimate-starwars-battle/static/media/people.e2b3ded2.jpg",
-    "static/media/starships.72f204f2.webp": "/ValentinaVanu/ultimate-starwars-battle/static/media/starships.72f204f2.webp",
-    "static/media/starwarssong.1852ca55.mp3": "/ValentinaVanu/ultimate-starwars-battle/static/media/starwarssong.1852ca55.mp3"
+    "main.css": "/ultimate-starwars-battle/static/css/main.eb2cadfd.chunk.css",
+    "main.js": "/ultimate-starwars-battle/static/js/main.74dffc0d.chunk.js",
+    "main.js.map": "/ultimate-starwars-battle/static/js/main.74dffc0d.chunk.js.map",
+    "runtime-main.js": "/ultimate-starwars-battle/static/js/runtime-main.b36d26a2.js",
+    "runtime-main.js.map": "/ultimate-starwars-battle/static/js/runtime-main.b36d26a2.js.map",
+    "static/css/2.658248ec.chunk.css": "/ultimate-starwars-battle/static/css/2.658248ec.chunk.css",
+    "static/js/2.f3986930.chunk.js": "/ultimate-starwars-battle/static/js/2.f3986930.chunk.js",
+    "static/js/2.f3986930.chunk.js.map": "/ultimate-starwars-battle/static/js/2.f3986930.chunk.js.map",
+    "index.html": "/ultimate-starwars-battle/index.html",
+    "static/css/2.658248ec.chunk.css.map": "/ultimate-starwars-battle/static/css/2.658248ec.chunk.css.map",
+    "static/css/main.eb2cadfd.chunk.css.map": "/ultimate-starwars-battle/static/css/main.eb2cadfd.chunk.css.map",
+    "static/js/2.f3986930.chunk.js.LICENSE.txt": "/ultimate-starwars-battle/static/js/2.f3986930.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/ultimate-starwars-battle/static/media/battle.daa222dd.jpg",
+    "static/media/deathstar.3125cba8.jpg": "/ultimate-starwars-battle/static/media/deathstar.3125cba8.jpg",
+    "static/media/people.e2b3ded2.jpg": "/ultimate-starwars-battle/static/media/people.e2b3ded2.jpg",
+    "static/media/starships.72f204f2.webp": "/ultimate-starwars-battle/static/media/starships.72f204f2.webp",
+    "static/media/starwarssong.1852ca55.mp3": "/ultimate-starwars-battle/static/media/starwarssong.1852ca55.mp3"
   },
   "entrypoints": [
-    "static/js/runtime-main.16ef46ae.js",
+    "static/js/runtime-main.b36d26a2.js",
     "static/css/2.658248ec.chunk.css",
-    "static/js/2.4341c917.chunk.js",
-    "static/css/main.de92d894.chunk.css",
+    "static/js/2.f3986930.chunk.js",
+    "static/css/main.eb2cadfd.chunk.css",
     "static/js/main.74dffc0d.chunk.js"
   ]
 }
