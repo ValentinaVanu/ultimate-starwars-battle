@@ -14,9 +14,9 @@ export const StyledCardBody = styled.div`
 `
 
 export const StyledCard = styled(Card)`
-  width: 100%;
   font-weight: 600;
   text-align: center;
+  margin: 2rem;
   color: #135175;
   background-color: rgba(255,255,255,0.85);
   position: relative;
@@ -33,20 +33,9 @@ export const StyledCard = styled(Card)`
 
 export const StyledCardWrapper = styled.div`
   height: 100%;
-  display: grid;
-  margin: 1rem;
-  max-width: 1280px;
-  grid-template-columns: repeat(auto-fill, minmax(186px, 1fr)) ; grid-template-rows: auto;
-  grid-gap: 10px;
-
-  @media only screen and (min-width: 768px) {
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-  }
-  @media only screen and (min-width: 992px) {
-    grid-template-rows: repeat(12, 1fr);
-    grid-template-columns: repeat(auto-fill, minmax(150px, 260px));
-  }
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 `
-

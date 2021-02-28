@@ -29,11 +29,11 @@ export const StyledCardSubtitle = styled(CardSubtitle)`
 `
 
 export const StyledCardBody = styled(CardBody)`
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 5px;
   justify-items: start;
-  overflow-x: auto;
+  overflow-x: auto; */
 `
 
 export const StyledcardDescription = styled(CardSubtitle)`

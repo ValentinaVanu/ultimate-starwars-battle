@@ -18,18 +18,7 @@ export const StyledCard = styled(Card)`
 `
 
 export const StyledCardWrapper = styled.div`
-  grid-row: 1/-1;
-  grid-column: 1/-1;
-  margin: 1rem;
 
-  @media only screen and (min-width: 768px) {
-    grid-row: 3/7;
-    grid-column: 3/7
-  }
-  @media only screen and (min-width: 992px) {
-    grid-row: 2/10;
-    grid-column: 2/5;
-  }
 `
 export const StyledWinnerCard = styled(Card)`
   color: red;
@@ -40,19 +29,9 @@ export const StyledWinnerCard = styled(Card)`
 export const StyledFightWrapper = styled.div`
   justify-items: center;
   height: 100%;
-  grid-column: 1/-1;
-  grid-row: 1/-1;
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-
-  @media only screen and (min-width: 768px) {
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-  }
-  @media only screen and (min-width: 992px) {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 260px));
-    grid-template-rows: repeat(12, 1fr);
-  }
-`
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  align-self: center;
+  justify-content: center;
+  `

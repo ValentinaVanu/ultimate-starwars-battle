@@ -20,10 +20,10 @@ const App = () => {
         <Fight path="/fight" />
         <FirstVersion path="/fight-first-version" />
 
-        <Intro path="/gh-pages-url" />
+        {/* <Intro path="/gh-pages-url" />
         <CardMenu path="/gh-pages-url/card-menu/" />
         <Fight path="/gh-pages-url/fight" />
-        <FirstVersion path="/gh-pages-url/fight-first-version" />
+        <FirstVersion path="/gh-pages-url/fight-first-version" /> */}
       </StyledRouter>
     </StyledAppWrapper>
   )

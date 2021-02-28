@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux'
 
 import * as AC from '../../store/card.action'
 import * as SC from './card-menu.style'
-import { CardTitle, CardImg } from 'reactstrap'
+import { CardTitle, CardImg, CardBody } from 'reactstrap'
 import peopleImg from '../people/people.jpg'
 import starshipsImg from '../starship/starships.webp'
 import { Menu } from '../menu/menu.component'
@@ -44,10 +44,10 @@ const CardMenu = () => {
           return (
             <SC.StyledCard key={key}>
               <CardImg src={starshipsImg} />
-              <SC.StyledCardBody>
+              <CardBody>
                 <CardTitle
                   tag="h6">{name}</CardTitle>
-              </SC.StyledCardBody>
+              </CardBody>
             </SC.StyledCard>
           )
         })

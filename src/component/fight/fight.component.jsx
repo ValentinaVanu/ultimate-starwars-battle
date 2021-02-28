@@ -67,7 +67,6 @@ const Fight = () => {
           </SR.StyledCardBody>
         </StyledCard>
         <StyledWinnerCard>
-          {/* <CardImg src={starshipsImg} /> */}
           <SR.StyledCardBody>
             <CardTitle
               tag="h6">The WINER is... {getWinner()} !</CardTitle>

@@ -11,35 +11,17 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
   white-space: nowrap;
   color: #fff;
-  background-color: #007bff;
-  padding: 10px;
-  padding-top: 7px;
-  border-radius: 4px;
 
   &:hover {
     text-decoration: none;
     color: #fff;
-    background-color: #0069d9;
   }
 `
 
 export const StyledMenuWrapper = styled.div`
-  grid-column: 1/-1;
-  grid-row: 4/-1;
-  justify-self: center;
-  align-self: end;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
-
-  @media only screen and (min-width: 768px) {
-    grid-column: 3/7;
-    grid-row: 3/7;
-  }
-  @media only screen and (min-width: 992px) {
-    grid-row: 12/-1;
-    grid-column: 1/6;
-    margin-bottom: 1rem;
-  }
-
+  position: fixed;
+  margin: 0;
+  bottom: 0;
+  left: auto;
+  right: auto;
 `

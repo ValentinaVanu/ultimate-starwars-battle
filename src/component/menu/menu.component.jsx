@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 
-import { navigate, Link } from '@reach/router'
+import { Link, navigate } from '@reach/router'
 
+import Button from '@material-ui/core/Button';
+import ButtonGroup from '@material-ui/core/ButtonGroup';
 import * as SM from './menu.style'
 // import { CardMenu } from '../card-menu'
 // import { Intro } from '../intro';
@@ -52,18 +54,12 @@ const Menu = () => {
 
   return (
     <SM.StyledMenuWrapper>
-      <SM.StyledMenuButton
-        onClick={handlePickedOpponents}
-      >Pick Opponents
-      </SM.StyledMenuButton>
-      <SM.StyledLink
-        to="/gh-pages-url/card-menu">
-        Card Menu
-      </SM.StyledLink>
-      <SM.StyledLink
-        to="/gh-pages-url">
-        Back to Intro
-      </SM.StyledLink>
+      <ButtonGroup variant="contained" color="primary" aria-label="contained primary button group">
+        <Button onClick={handlePickedOpponents}>Pick Opponents</Button>
+        <Button><SM.StyledLink to="/card-menu">Card Menu</SM.StyledLink></Button>
+        <Button><SM.StyledLink to="/">Back to Intro</SM.StyledLink></Button>
+        <Button><SM.StyledLink to="/fight-first-version">Humans Vs Starships</SM.StyledLink></Button>
+      </ButtonGroup>
     </SM.StyledMenuWrapper>
   )
 }
